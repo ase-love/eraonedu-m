@@ -59,9 +59,14 @@
           </div>
         </div>
         
-        <div class="btn-wrap">
-          <a href="javascript:void(0);" class="btn-type2 st2 full">목록</a>
-        </div>        
+        <script>
+          $.get("common/review.html", function(data) {
+             $(data).appendTo(".detail-view");
+             $('.top-menu').show();
+             $('.btn-more-view').show();
+             $('.btn-wrap').show();
+         });
+       </script>     
       </div>
     </main>
   </div>

@@ -243,8 +243,8 @@
 .lecture-review-wrap .review-list-wrap .review-list > li .review .img {margin-right:rem(6);width:rem(28);height:rem(28);border-radius:100%;overflow:hidden;}
 .lecture-review-wrap .review-list-wrap .review-list > li .review .img img{width:100%;height:100%;}
 .lecture-review-wrap .review-list-wrap .review-list > li .review .desc {flex:1;}
-.lecture-review-wrap .review-list-wrap .review-list > li .review .desc .name-area .name {letter-spacing: -0.5px; font-weight: 600; font-size: rem(14); color: #1F2125;}
-.lecture-review-wrap .review-list-wrap .review-list > li .review .desc .name-area .date {font-size: rem(13); color: #86909C;}
+.lecture-review-wrap .review-list-wrap .review-list > li .review .desc .name-area .name {display:inline-block; letter-spacing: -0.5px; font-weight: 600; font-size: rem(14); color: #1F2125;}
+.lecture-review-wrap .review-list-wrap .review-list > li .review .desc .name-area .date {display:inline-block;margin-left:rem(5); font-size: rem(13); color: #86909C;}
 .lecture-review-wrap .review-list-wrap .review-list > li .review .text {margin-top:rem(10);white-space: pre-line;font-size:rem(14);}
 .lecture-review-wrap .top-menu + .review-list-wrap{margin-top:rem(20);}
 .lecture-review-wrap .btn-more-view{margin-top:rem(20);}
