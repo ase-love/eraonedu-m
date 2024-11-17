@@ -117,8 +117,17 @@
               </a>
             </li>
           </ul>
-          <div class="btn-more-view">
-            <button type="button"><span>더보기</span></button>
+          <div class="paging-wrap">
+            <div class="paging">
+              <button type="button" disabled class="btn-first"></button>
+              <button type="button" disabled class="btn-prev"></button>
+              <button type="button">1</button>
+              <button type="button" class="on">2</button>
+              <button type="button">3</button>
+              <button type="button">4</button>
+              <button type="button" class="btn-next"></button>
+              <button type="button" class="btn-last"></button>
+            </div>
           </div>
         </div>
         <!-- // 전체 -->
@@ -164,6 +173,15 @@
           </ul>
         </div>
         <!-- // 이벤트 -->
+
+        <div class="nodata-box">
+          <i></i>
+          <strong class="tit">검색 결과가 없습니다.</strong>
+          <p class="txt">
+            원하는 검색 결과를 찾지 못했다면 
+            <br>다른 검색어를 입력해 주세요.
+          </p>
+        </div>        
         
       </div>
     </main>
