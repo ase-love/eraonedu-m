@@ -31,63 +31,55 @@ function gnbMenu(){
 
 
 function mainSlide(){
-  let obj = '.main-slider';
-  let gage = 0;
-  let autoTimer = false;
-  let visualSlide = new Swiper( obj , {
-    loop: true,
-    autoplay: {
-        delay: 3500,
+  if($('.main-slider .swiper-slide').length <= 1){
+    $('.main-slider .swiper-menu-wrap').remove();
+    return;
+  }
+  let mainswiper = new Swiper('.main-slider', {
+      loop: true,
+      autoplay:{
+        dealy: 300,
         disableOnInteraction: false,
-    },
-    freeMode: false,
-    slidesPerView: 1,
-    pagination: {
-      el: obj + " .fraction",
-      type: "fraction",
-    },    
-    on: {
-        slideChangeTransitionStart: function () {
-          gage = 0;
-          setGage()
-        }
-      }     
+      },
+      speed:800,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".main-slider .swiper-button-next",
+        prevEl: ".main-slider .swiper-button-prev",
+      },
+      pagination: {
+        el: ".main-slider .swiper-pagination",
+        type: "fraction",
+      }		
   });
 
-  setGage();
-  function setGage(){
-    if(gage >= 100) {
-      gage = 0;
-    }
-    clearInterval(autoTimer);
-    autoTimer = setInterval(function(){
-      if(gage >= 100) {
-        gage = 0;
-        visualSlide.slideNext();
-      }
-      gage += 1;
-      $('.swiper-gage .bar').css('width', gage +'%');
-    }, 35)
-  }  
-
-  $(obj).find('.play-stop').on('click', function(){
-      visualSlide.autoplay.stop();
-      clearInterval(autoTimer);
-      if( $(obj).find('.play-start').is(':hidden')){
-        $(obj).find('.play-stop').hide();
-        $(obj).find('.play-start').show();
-      }
-    });
-
-    $(obj).find('.play-start').on('click', function(){
-      visualSlide.autoplay.start();
-      setGage();
-      if( $(obj).find('.play-stop').is(':hidden')){
-        $(obj).find('.play-start').hide();
-        $(obj).find('.play-stop').show();
-      }
-    });
+  $('.main-slider .stop-play .stop').on('click', function(){
+    $(this).hide();
+    $(this).next().show();
+    mainswiper.autoplay.stop();
+  });
+  $('.main-slider .stop-play .play').on('click', function(){
+    $(this).hide();
+    $(this).prev().show();
+    mainswiper.autoplay.start();
+  });
 }
+
+
+function mainLectureSlide(){
+  let list = [];
+  $('.main-lecture-list-wrap').each(function(i){
+      $(this).addClass('main-lecture-list-wrap'+i);
+      list.push('main-lecture-list-wrap'+i);
+  });    
+  for(let i= 0; i<list.length;i++){    
+    const lectureSlider = new Swiper('.'+list[i]+' .main-lecture-list', {
+      speed:550,
+      slidesPerView: 'auto',
+      spaceBetween:10,
+    });
+  }
+}  
 
 
 function mainlectureSlide(){
