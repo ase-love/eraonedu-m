@@ -403,7 +403,7 @@ select:focus { border-color: var(--c-primary); }
 .footer .footer-info .logo-footer img { width: 4.0625rem; height: 1.875rem; }
 .footer .footer-info .footer-sns{display:flex;align-items:center;gap:0.625rem;}
 .footer .footer-info .footer-sns li a{display:flex;justify-content:center;align-items:center;width: 1.875rem; height: 1.875rem;background: #BDBDBD;border-radius:100%;}
-.footer .footer-info .footer-sns li a i{width:100%;height:100%;background:url('../images/commoon/ico-sns-footer.svg') no-repeat 0 0;background-size:auto 1.875rem !important;}
+.footer .footer-info .footer-sns li a i{width:100%;height:100%;background:url('../images/common/ico-sns-footer.svg') no-repeat 0 0;background-size:auto 1.875rem !important;}
 .footer .footer-info .footer-sns li a .ico-sns-youtube {background-position-x: 0 !important;}
 .footer .footer-info .footer-sns li a .ico-sns-cafe {background-position-x: -3.125rem !important;}
 .footer .footer-info .footer-sns li a .ico-sns-blog {background-position-x: -6.25rem !important;}
