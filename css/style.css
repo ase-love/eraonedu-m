@@ -48,8 +48,8 @@
 .main-lecture-wrap .main-lecture-list-wrap{position:relative;}
 .main-lecture-wrap .main-lecture-list{margin-top:1.25rem;overflow:hidden;padding:0 1.5rem;}
 .main-lecture-wrap .main-lecture-list .swiper-slide{width:9.375rem;}
-.main-lecture-wrap .main-lecture-list .swiper-slide .img{display:flex;justify-content:center;align-items:center;height:5.1875rem;}
-.main-lecture-wrap .main-lecture-list .swiper-slide .img img{object-fit: cover;width:100%;height:100%;border-radius:0.625rem;}
+.main-lecture-wrap .main-lecture-list .swiper-slide .img{display:flex;justify-content:center;align-items:center;}
+.main-lecture-wrap .main-lecture-list .swiper-slide .img img{width:100%;border-radius:0.625rem;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc{margin-top:1rem;color: #1F2125;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .info{font-size:0.75rem;display:flex;align-items:center;justify-content: space-between;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .info .left{font-weight:500;}
