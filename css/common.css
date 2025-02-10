@@ -212,7 +212,7 @@ select:focus { border-color: var(--c-primary); }
 .gage-bar .bar { position: absolute; top: 0; left: 0; height: 100%; background: var(--c-primary); border-radius: 0.375rem; }
 
 /* paging */
-.paging-wrap { text-align: center; margin-top: 2.5rem; }
+.paging-wrap { text-align: center; margin-top: 1rem; }
 .paging-wrap .paging { display: inline-flex; align-items: center; }
 .paging-wrap .paging [class*=btn-] { background-size: auto 100%; background-position: 50% 50%; background-repeat: no-repeat; }
 .paging-wrap .paging [class*=btn-]:disabled { opacity: 0.3; }
@@ -271,12 +271,12 @@ select:focus { border-color: var(--c-primary); }
 .btn-type2 { height: 3.125rem; line-height: 3rem; padding: 0 2.5rem; text-align: center; font-size: 1rem; border-radius: 0.5rem; font-weight: 600; }
 .btn-type3 { height: 48px; line-height: 52px; padding: 0 30px; text-align: center; font-size: 16px; border-radius: 6px; font-weight: 500; }
 .btn-type3.pad2 { padding: 0 1.25rem; }
-.btn-type4 { height: 2.625rem; line-height: 2.5rem; padding: 0 0.875rem; text-align: center; font-size: 0.875rem; border-radius: 0.5rem; font-weight: 700; }
+.btn-type4 { height: 2.625rem; line-height: 2.5rem; padding: 0 0.875rem; text-align: center; font-size: 0.875rem; border-radius: 0.5rem; font-weight: 500; }
 .btn-type5 { height: 2rem; line-height: 1.875rem; padding: 0 1rem; text-align: center; font-size: 0.75rem; border-radius: 0.5rem; font-weight: 500; }
-.btn-reple { height: 2.625rem; background: #FFFFFF; border: 1px solid #011B6A; border-radius: 0.5rem; padding: 0 1.5rem; color: #fff; font-weight: 700; font-size: 0.875rem; background: #011B6A; }
+.btn-reple { height: 2.625rem; background: #FFFFFF; border: 1px solid #011B6A; border-radius: 0.5rem; padding: 0 1.5rem; color: #fff; font-weight: 600; font-size: 0.875rem; background: #011B6A; }
 
 /* title */
-.title-main { font-size: 1.25rem; font-weight: 700; }
+.title-main { font-size: 1.25rem; font-weight: 600; }
 .title-section { display: flex; align-items: flex-start; font-weight: 600; font-size: 1rem; letter-spacing: -0.04em; }
 .title-section + * { margin-top: 0.625rem; }
 .title-section em { color: #5436EA; font-weight: 600; white-space: nowrap; }
